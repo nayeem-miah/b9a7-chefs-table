@@ -1,0 +1,101 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Grilled Salmon",
+    "short_description": "Healthy and delicious grilled salmon with lemon and herbs",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 lemons, sliced",
+      "2 tablespoons olive oil",
+      "2 cloves garlic, minced",
+      "Salt and pepper to taste",
+      "Fresh herbs (such as dill or parsley) for garnish"
+    ],
+    "recipe_image": "https://i.ibb.co/NWzsp4k/delicious-chicken-table.jpg",
+    "preparing_time": 59,
+    "calories": 450
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Vegetable Stir-Fry",
+    "short_description": "Colorful and nutritious stir-fried vegetables in a savory sauce",
+    "ingredients": [
+      "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
+      "1 tablespoon sesame oil",
+      "3 tablespoons soy sauce",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, minced"
+    ],
+    "recipe_image": "https://i.ibb.co/z4Xtyck/Rectangle-20170.jpg",
+    "preparing_time": 15,
+    "calories": 150
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Chicken Caesar Salad",
+    "short_description": "Classic Caesar salad with grilled chicken and homemade dressing",
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "1 head romaine lettuce, chopped",
+      "1/2 cup grated Parmesan cheese",
+      "1 cup croutons",
+      "1/4 cup Caesar dressing",
+      "Salt and pepper to taste"
+    ],
+    "recipe_image": "https://i.ibb.co/hCyVwN7/top-view-fried-potatoes-with-seasonings-bread-loafs-different-vegetables-dark-desk.jpg",
+    "preparing_time": 30,
+    "calories": 300
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Pasta Primavera",
+    "short_description": "Light and flavorful pasta dish with seasonal vegetables",
+    "ingredients": [
+      "250g pasta (penne, fusilli, or spaghetti)",
+      "2 cups mixed vegetables (zucchini, cherry tomatoes, bell peppers)",
+      "3 tablespoons olive oil",
+      "2 cloves garlic, minced",
+      "1/4 cup grated Parmesan cheese",
+      "Fresh basil leaves for garnish"
+    ],
+    "recipe_image": "https://i.ibb.co/GTNzMcJ/Rectangle-20170-1.jpg",
+    "preparing_time": 34,
+    "calories": 250
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Beef Tacos",
+    "short_description": "Easy and flavorful tacos with seasoned ground beef and toppings",
+    "ingredients": [
+      "500g ground beef",
+      "1 packet taco seasoning",
+      "8 small corn or flour tortillas",
+      "1 cup shredded lettuce",
+      "1 cup diced tomatoes",
+      "1/2 cup shredded cheddar cheese",
+      "Sour cream and salsa for serving"
+    ],
+    "recipe_image": "https://i.ibb.co/B47sBy0/mexican-tacos-with-beef-tomato-sauce-salsa.jpg",
+    "preparing_time": 23,
+    "calories": 400
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Chocolate Chip Cookies",
+    "short_description": "Classic homemade chocolate chip cookies that are soft and chewy",
+    "ingredients": [
+      "1 cup unsalted butter, softened",
+      "3/4 cup granulated sugar",
+      "3/4 cup packed brown sugar",
+      "2 large eggs",
+      "1 teaspoon vanilla extract",
+      "2 1/4 cups all-purpose flour",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "2 cups semisweet chocolate chips"
+    ],
+    "recipe_image": "https://i.ibb.co/0tVdP35/side-view-pilaf-with-stewed-beef-meat-plate.jpg",
+    "preparing_time": 15,
+    "calories": 180
+  }
+]
