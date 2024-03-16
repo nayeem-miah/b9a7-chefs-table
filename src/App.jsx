@@ -49,7 +49,7 @@ const handleRemoveCart= id=>{
           </div>
           {/* side ver section  */}
           <div className="lg:w-1/3 w-full mt-8  shadow-xl p-4">
-      <div>
+      <div className="mb-10">
         <h2 className="text-3xl font-semibold border-b-2 p-2 text-center">
           Want to cook: <span>1</span>
         </h2>
@@ -67,6 +67,28 @@ const handleRemoveCart= id=>{
                 <p className="mr-2"> {item.preparing_time} minutes</p>
                 <p>{item.calories} calories</p>
                 <button onClick={()=> handleRemoveCart(item.recipe_id)} className="rounded-2xl btn bg-green-600">Preparing</button>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div>
+        <h2 className="text-3xl font-semibold border-b-2 p-2 text-center">
+          Want to cook: <span>2</span>
+        </h2>
+
+        <ul className="flex justify-between  font-bold text-gray-800 mb-5 text-xl">
+          <li>Name</li>
+          <li>Time</li>
+          <li>Calories</li>
+        </ul>
+        <div>
+          {
+            card.map((item,index) => ( 
+              <div key={index} className="flex justify-between bg-gray-200 p-4 shadow-xl rounded-xl items-center mb-4">
+                <p className="ml-2">{index+1}. {item.recipe_name } </p>
+                <p className="mr-2"> {item.preparing_time} minutes</p>
+                <p>{item.calories} calories</p>
               </div>
             ))
           }
