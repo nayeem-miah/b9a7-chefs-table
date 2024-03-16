@@ -51,7 +51,7 @@ const handleRemoveCart= id=>{
           <div className="lg:w-1/3 w-full mt-8  shadow-xl p-4">
       <div className="mb-10">
         <h2 className="text-3xl font-semibold border-b-2 p-2 text-center">
-          Want to cook: <span>1</span>
+          Want to cook: <span>{card.length}</span>
         </h2>
 
         <ul className="flex justify-evenly mr-20 font-bold text-gray-800 mb-5 text-xl">

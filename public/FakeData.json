@@ -1,6 +1,22 @@
 [
+
   {
     "recipe_id": 1,
+    "recipe_name": "Vegetable Stir-Fry",
+    "short_description": "Colorful and nutritious stir-fried vegetables in a savory sauce",
+    "ingredients": [
+      "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
+      "1 tablespoon sesame oil",
+      "3 tablespoons soy sauce",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, minced"
+    ],
+    "recipe_image": "https://i.ibb.co/z4Xtyck/Rectangle-20170.jpg",
+    "preparing_time": 15,
+    "calories": 150
+  },
+  {
+    "recipe_id": 2,
     "recipe_name": "Grilled Salmon",
     "short_description": "Healthy and delicious grilled salmon with lemon and herbs",
     "ingredients": [
@@ -14,21 +30,7 @@
     "recipe_image": "https://i.ibb.co/NWzsp4k/delicious-chicken-table.jpg",
     "preparing_time": 59,
     "calories": 450
-  },
-  {
-    "recipe_id": 2,
-    "recipe_name": "Vegetable Stir-Fry",
-    "short_description": "Colorful and nutritious stir-fried vegetables in a savory sauce",
-    "ingredients": [
-      "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
-      "1 tablespoon sesame oil",
-      "3 tablespoons soy sauce",
-      "2 cloves garlic, minced",
-      "1 tablespoon ginger, minced"
-    ],
-    "recipe_image": "https://i.ibb.co/z4Xtyck/Rectangle-20170.jpg",
-    "preparing_time": 15,
-    "calories": 150
+    
   },
   {
     "recipe_id": 3,
