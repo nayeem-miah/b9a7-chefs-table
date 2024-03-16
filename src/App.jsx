@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 import "./App.css";
 import Header from "./Components/Banner/Header";
 // import Card from "./Components/Banner/Main/Card";
@@ -21,8 +24,9 @@ function App() {
       setCart([...card,pd]);
     }
     else{
-      alert('This Card Already Exit');
+      toast('This Card Already Exit');
     }
+    
     
   };
 
@@ -34,7 +38,7 @@ const handleRemoveCart= id=>{
 //   console.log(remove);
 // }
 
-  // console.log(card);
+  console.log(card);
   return (
     <>
       {/* banner section  */}
@@ -94,6 +98,7 @@ const handleRemoveCart= id=>{
           {/* <Card></Card> */}
         </div>
       </div>
+      <ToastContainer/>
     </>
   );
 }
