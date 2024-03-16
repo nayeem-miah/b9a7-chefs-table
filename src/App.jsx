@@ -12,10 +12,11 @@ function App() {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  // console.log(value);
+  console.log(card);
 
   const handleCart = (pd) => {
-    const isExitProduct = card.find(product=> product.id == pd.id);
+    
+    const isExitProduct = card.find(product=> product.recipe_id == pd.recipe_id);
     if(!isExitProduct){
       setCart([...card,pd]);
     }
@@ -54,9 +55,9 @@ function App() {
         <div>
           {
             card.map((item,index) => ( 
-              <div key={index} className="flex justify-between bg-gray-200 p-4 shadow-xl rounded-xl items-center">
-                <p>{index+1}. {item.recipe_name}</p>
-                <p>{item.preparing_time} minutes</p>
+              <div key={index} className="flex justify-between bg-gray-200 p-4 shadow-xl rounded-xl items-center mb-4">
+                <p>{index+1}. {item.recipe_name } </p>
+                <p className="mr-2"> {item.preparing_time} minutes</p>
                 <p>{item.calories} calories</p>
                 <button className="rounded-2xl btn bg-green-600">Preparing</button>
               </div>

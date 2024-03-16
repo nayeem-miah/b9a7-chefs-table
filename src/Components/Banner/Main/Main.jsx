@@ -46,7 +46,7 @@ const Main = ({product, handleCart}) => {
                   <PiFireSimpleFill></PiFireSimpleFill> <span>{calories}</span>calories
                 </p>
               </div>
-              <button onClick={()=> handleCart(product)} className="btn rounded-3xl text-[18px] bg-green-700">
+              <button onClick={()=> handleCart(product)} className="btn rounded-2xl text-[18px] bg-green-700">
                 Want to Cook
               </button>
             </div>
