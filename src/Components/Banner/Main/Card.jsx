@@ -11,8 +11,12 @@ const Card = () => {
           <li>Time</li>
           <li>Calories</li>
         </ul>
+        
+        
       </div>
+
     </div>
+    
   );
 };
 

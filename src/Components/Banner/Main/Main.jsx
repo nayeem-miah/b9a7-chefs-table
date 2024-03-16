@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const Main = ({product, handleCart}) => {
     
-    console.log(product)
+    // console.log(product)
     const {recipe_name,recipe_image,preparing_time,short_description,calories,
         ingredients} =product;
         // console.log(ingredients)
@@ -46,7 +46,7 @@ const Main = ({product, handleCart}) => {
                   <PiFireSimpleFill></PiFireSimpleFill> <span>{calories}</span>calories
                 </p>
               </div>
-              <button onClick={()=> handleCart()} className="btn rounded-3xl text-[18px] bg-green-700">
+              <button onClick={()=> handleCart(product)} className="btn rounded-3xl text-[18px] bg-green-700">
                 Want to Cook
               </button>
             </div>
