@@ -1,7 +1,6 @@
 
 import { IoMdTime } from "react-icons/io";
 import { PiFireSimpleFill } from "react-icons/pi";
-
 import PropTypes from 'prop-types';
 
 const Main = ({product, handleCart}) => {
@@ -9,7 +8,7 @@ const Main = ({product, handleCart}) => {
     // console.log(product)
     const {recipe_name,recipe_image,preparing_time,short_description,calories,
         ingredients} =product;
-        // console.log(ingredients)
+        console.log(ingredients)
         
   return (
     <div className="lg:w-2/3 w-full">
@@ -26,12 +25,14 @@ const Main = ({product, handleCart}) => {
              {short_description}
             </p>
             <div className="">
-              <h2 className="text-xl">
-                Ingredients: <span>6</span>
+             <p>
+             <h2 className="text-xl">
+                Ingredients: <span>{ingredients.length}</span>
               </h2>
               {
-                
+                ingredients.map((value, idx) => <span key={idx}> <li className="li">{value}</li></span>)
               }
+             </p>
               <ul className="border-b-2 mb-4 pb-4">
                 
                 

@@ -12,7 +12,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  console.log(card);
+  // console.log(card);
 
   const handleCart = (pd) => {
     
@@ -30,6 +30,9 @@ const handleRemoveCart= id=>{
   const newCard =card.filter(product=> product.recipe_id !=id);
   setCart(newCard);
 }
+// const handleRemoveAddToCard= remove =>{
+//   console.log(remove);
+// }
 
   // console.log(card);
   return (
@@ -74,7 +77,7 @@ const handleRemoveCart= id=>{
       </div>
       <div>
         <h2 className="text-3xl font-semibold border-b-2 p-2 text-center">
-          Want to cook: <span>2</span>
+        Currently cooking: <span>2</span>
         </h2>
 
         <ul className="flex justify-between  font-bold text-gray-800 mb-5 text-xl">
@@ -83,15 +86,7 @@ const handleRemoveCart= id=>{
           <li>Calories</li>
         </ul>
         <div>
-          {
-            card.map((item,index) => ( 
-              <div key={index} className="flex justify-between bg-gray-200 p-4 shadow-xl rounded-xl items-center mb-4">
-                <p className="ml-2">{index+1}. {item.recipe_name } </p>
-                <p className="mr-2"> {item.preparing_time} minutes</p>
-                <p>{item.calories} calories</p>
-              </div>
-            ))
-          }
+          
         </div>
       </div>
     </div>
