@@ -25,7 +25,13 @@ function App() {
     }
     
   };
-  console.log(card);
+
+const handleRemoveCart= id=>{
+  const newCard =card.filter(product=> product.recipe_id !=id);
+  setCart(newCard);
+}
+
+  // console.log(card);
   return (
     <>
       {/* banner section  */}
@@ -41,6 +47,7 @@ function App() {
               ></Main>
             ))}
           </div>
+          {/* side ver section  */}
           <div className="lg:w-1/3 w-full mt-8  shadow-xl p-4">
       <div>
         <h2 className="text-3xl font-semibold border-b-2 p-2 text-center">
@@ -56,10 +63,10 @@ function App() {
           {
             card.map((item,index) => ( 
               <div key={index} className="flex justify-between bg-gray-200 p-4 shadow-xl rounded-xl items-center mb-4">
-                <p>{index+1}. {item.recipe_name } </p>
+                <p className="ml-2">{index+1}. {item.recipe_name } </p>
                 <p className="mr-2"> {item.preparing_time} minutes</p>
                 <p>{item.calories} calories</p>
-                <button className="rounded-2xl btn bg-green-600">Preparing</button>
+                <button onClick={()=> handleRemoveCart(item.recipe_id)} className="rounded-2xl btn bg-green-600">Preparing</button>
               </div>
             ))
           }
