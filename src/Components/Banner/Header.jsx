@@ -74,8 +74,8 @@ const Header = () => {
         </div>
       </div>
       <div className="mb-14 mt-10 p-0">
-        <div className="hero min-h-screen">
-          <img src="https://i.ibb.co/Wt2ktH4/banner.jpg"></img>
+        <div className="hero ">
+          <img className="min-h-full" src="https://i.ibb.co/Wt2ktH4/banner.jpg"></img>
           
           <div className="hero-content  text-neutral-content">
             <div className="lg:mx-24 ">

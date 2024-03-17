@@ -31,18 +31,20 @@ function App() {
   };
 
   const handleRemoveCart = (item) => {
-    const newCard = card.filter((product) => product.recipe_id !== item.recipe_id);
+    
+    const newCard = card.filter(
+      (product) => product.recipe_id !== item.recipe_id
+    );
     setCart(newCard);
-   
-
     setUseId([...useId, item]);
+    
     
   };
   // console.log(card);
   return (
     <>
       {/* banner section  */}
-      <div className="p-10">
+      <div className="lg:p-10 p-1">
         <Header></Header>
         <div className="lg:flex  justify-between">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mb-4">
@@ -114,14 +116,14 @@ function App() {
                 </div>
                 <div>
                   <div className="flex justify-around text-2xl">
-                    <p>Total Time = minutes</p>
+
+                    <p>Total Time = 45 minutes</p>
                     <p>Total Calories = 1050 calories</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <ToastContainer />
