@@ -8,7 +8,7 @@ const Main = ({product, handleCart}) => {
     // console.log(product)
     const {recipe_name,recipe_image,preparing_time,short_description,calories,
         ingredients} =product;
-        console.log(ingredients)
+        // console.log(ingredients)
         
   return (
     <div className="lg:w-2/3 w-full">
