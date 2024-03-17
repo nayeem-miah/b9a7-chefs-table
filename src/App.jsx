@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
 import Header from "./Components/Banner/Header";
-// import Card from "./Components/Banner/Main/Card";
 import Main from "./Components/Banner/Main/Main";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-  // console.log(card);
 
   const handleCart = (pd) => {
     const isExitProduct = card.find(
